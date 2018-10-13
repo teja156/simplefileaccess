@@ -14,7 +14,9 @@ import sys
 def checkversion():
     ver = sys.version
     ver2 = ver[0:1]
-    if(not(ver2==2)):
+    vers = int(ver2)
+    #print(vers)
+    if(vers>2):
         print("This script is not compatible with your version of python, please download python 2.x.x")
         exit(1)
 
