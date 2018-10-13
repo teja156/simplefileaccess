@@ -8,6 +8,17 @@ import BaseHTTPServer
 import os
 import optparse
 import threading
+import sys
+
+
+def checkversion():
+    ver = sys.version
+    ver2 = ver[0:1]
+    if(not(ver2==2)):
+        print("This script is not compatible with your version of python, please download python 2.x.x")
+        exit(1)
+
+checkversion()
 
 USERNAME = "user" #set your username by editing this value within the quotes
 PASSWORD = "123456" #set your password by editing the value within the quotes
