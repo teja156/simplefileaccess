@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>A Simple FTP Server - By Teja Swaroop</title>
+</head>
+    
+<body>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <div class="main" align="center">
+    <div class = "titles">
+    
+        <h align=>Login in to your account</h>
+     
+    
+    </div>
+    <div align="center" class = "loginbox">
+    <form id="loginform">
+         Username : <input id="username" type="text" name="username" hint="user"><br>
+        <br>
+        Password : <input id="password" type="password" name="passwd" hint="****"><br>
+        <input id="submit" type="submit" value="Login">
+        </form>
+    
+    
+    </div>
+        
+        </div>
+    
+    
+    </body>
+    
+<style>
+    
+    
+    .main{
+       
+        margin: auto;
+        
+    }
+    
+    
+    #loginform{
+        margin-top:100px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 120%;
+        
+    }
+    
+    #username{
+        border-radius: 50px;
+        font-family: 'Roboto', sans-serif;
+        width:150px;
+        height:30px;
+        font-size: 105%;
+        text-align: center;
+        align-content: center;
+    }
+    #password{
+        margin-top:7px;
+        border-radius: 50px;
+        font-family: 'Roboto', sans-serif;
+        width:150px;
+        text-align: center;
+        font-size: 105%;
+        height:30px;
+        align-content: center;
+    }
+    
+    #submit{
+        font-family: 'Oswald', sans-serif;
+        font-size: 120%;
+        margin-top:10px;
+    }
+    
+    
+    .loginbox{
+        
+        position: fixed;
+        
+        
+        margin-left:400px;
+        
+        
+        margin-top:10px;
+        border-radius: 25px;
+        height:300px;
+        width:500px;
+        
+        align-content: center;
+        background-color: #d5d6cd;
+    }
+    
+    .titles{
+        position:relative;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 170%;
+        margin-top:140px;
+        margin-left:400px;
+        width:500px;
+        align-content: center;
+        text-align: center;
+    }
+    
+    </style>
+    
+    
+    
+    <script>
+        
+        var user = $('#username').val();
+        var passwd = $('#username').val();
+    $('#submit').click(function(){
+        //alert("button clicked"+user);
+        datatosend = user+";"+passwd;
+        result = runPyScript(datatosend);
+        //console.log('Got back ' + result);
+    });
+    
+        
+        
+        function runPyScript(input){
+        var jqXHR = $.ajax({
+            type: "POST",
+            url: "/ftpserver.py",
+            async: false,
+            data: { mydata: input }
+        });
+        }
+            
+            
+    </script>
+    
+</html>
