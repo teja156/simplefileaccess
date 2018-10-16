@@ -28,7 +28,7 @@ PASSWORD = "123456" #set your password by editing the value within the quotes
 PATH = "/Users/tejaswaroop/Desktop" #Change this path to the directory on your computer which you want to make accessible by the server
 
 SCRIPT_PATH = "/Users/tejaswaroop/Desktop/simplefileaccess" #Change this path to the location of the downloaded script folder on your computer
-ANONYMOUS_PATH = SCRIPT_PATH+"/anonymous_ftp"
+ANONYMOUS_PATH = SCRIPT_PATH+"\\anonymous_ftp"
 
 f = open("logs.txt", "a")
 
