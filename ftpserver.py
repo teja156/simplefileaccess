@@ -1,6 +1,6 @@
-from pyftpdlib.authorizers import DummyAuthorizer
-from pyftpdlib.handlers import FTPHandler
-from pyftpdlib.servers import FTPServer
+#from pyftpdlib.authorizers import DummyAuthorizer
+#from pyftpdlib.handlers import FTPHandler
+#from pyftpdlib.servers import FTPServer
 
 import SimpleHTTPServer
 import SocketServer
