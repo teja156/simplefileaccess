@@ -15,7 +15,7 @@ HOW TO USE THIS TOOL?
 
 DOWNLOAD AND INSTALL :
 1. Download Python from www.python.org
-2. Install a library called pyftpdlib - https://pypi.org/project/pyftpdlib/ (You can do pip install pyftpdlib)
+2. Add python to Environment Variables Path (if you are using Windows)
 3. Download ngrok from https://ngrok.com/ and create an account. (We use this to create a secure tunnel to the localhost)
 4. Now download the script as a ZIP file
 5. Unzip the script file, and you will find a folder named as simplefileaccess
