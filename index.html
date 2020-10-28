@@ -15,15 +15,16 @@
     <div class="main" align="center">
     <div class = "titles">
     
-        <h align=>Login in to your account</h>
+        <h id="acc">Login in to your account</h>
      
     
     </div>
     <div align="center" class = "loginbox">
-    <form id="loginform">
-         Username : <input id="username" type="text" name="username" hint="user"><br>
+    <form id="loginform" width="20%" border="0px" cellspacing="20" align="center">
+        <img src="https://cdn.pixabay.com/photo/2017/03/21/02/00/user-2160923_960_720.png" alt="Login" id="png">
+        <input id="username" type="text" name="username" placeholder="Username" hint="user" class="type"><br>
         <br>
-        Password : <input id="password" type="password" name="passwd" hint="****"><br>
+        <input id="password" type="password" name="passwd" placeholder="Password" hint="****" class="type"><br>
         <input id="submit" type="submit" value="Login">
         </form>
     
@@ -43,7 +44,32 @@
         margin: auto;
         
     }
+
+    body{
+
+        background-image: url(https://pixabay.com/get/51e3d442435ab108feda8460da29317e1637d8e7525378_1920.jpg?attachment=);
+        position: fixed;
+
+    }
     
+    #acc{
+
+        position: fixed;
+        top: 110px;
+        right: 490px;
+        color: white;
+
+    }
+
+    #png{
+
+        height: 90px;
+        width: 90px;
+        position: fixed;
+        top: 190px;
+        right: 660px;
+
+    }
     
     #loginform{
         margin-top:100px;
@@ -55,27 +81,52 @@
     #username{
         border-radius: 50px;
         font-family: 'Roboto', sans-serif;
-        width:150px;
+        width:250px;
         height:30px;
         font-size: 105%;
         text-align: center;
         align-content: center;
+        color: white;
+        position: fixed;
+        top: 310px;
+        right: 575px;
     }
     #password{
         margin-top:7px;
         border-radius: 50px;
         font-family: 'Roboto', sans-serif;
-        width:150px;
+        width:250px;
         text-align: center;
         font-size: 105%;
         height:30px;
         align-content: center;
+        color: white;
+        position: fixed;
+        top: 350px;
+        right: 575px;
     }
     
     #submit{
         font-family: 'Oswald', sans-serif;
-        font-size: 120%;
+        font-size: 110%;
         margin-top:10px;
+        border-radius: 25px;
+        position: fixed;
+        top: 400px;
+        right: 675px;
+        background-color: yellow;
+    }
+
+    .type{
+
+        width: 270px;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        border-bottom: 3px solid white;
+        color: white;
+        font-size: 15px;
+
     }
     
     
@@ -83,17 +134,18 @@
         
         position: fixed;
         
-        
         margin-left:400px;
-        
-        
         margin-top:10px;
-        border-radius: 25px;
         height:300px;
         width:500px;
-        
+        background-color: black;
+        border: 8px solid white;
+        border-radius: 25px;
+        background: rgba(0, 0, 0, 0.5);
+        /* position: fixed;
+        bottom: 150px;
+        right: 600px; */
         align-content: center;
-        background-color: #d5d6cd;
     }
     
     .titles{
